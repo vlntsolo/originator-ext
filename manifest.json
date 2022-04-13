@@ -1,0 +1,20 @@
+{
+    "name": "Originator assistant",
+    "description": "Export your subs or run AutoQC within Netflix originator app with a breeze",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions": [],
+    "action": {},
+    "content_scripts": [
+        {
+            "matches": ["https://*.netflixstudios.com/*"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "icons": {
+        "16": "assets/icon16.png",
+        "32": "assets/icon32.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    }
+}   
